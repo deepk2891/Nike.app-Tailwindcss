@@ -1,5 +1,6 @@
-import { headerLogo } from "../assets/images";
-import { navLinks } from "../constants";
+import { headerLogo } from "../assets/images"
+import { navLinks } from "../constants"
+import { hamburger } from "../assets/icons"
 
 const Nav = () => {
 	return (
@@ -17,9 +18,12 @@ const Nav = () => {
 						</li>
 					))}
 				</ul>
+				<div className="hidden max-lg:block">
+					<img src={hamburger} alt="Hamburger" width={25} height={25} />
+				</div>
 			</nav>
 		</header>
-	);
-};
+	)
+}
 
-export default Nav;
+export default Nav
